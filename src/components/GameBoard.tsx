@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { BoardCell, Player, PropertyGroup } from '../types';
 import { PROPERTY_GROUP_COLORS } from '../data/boardData';
 import { Anchor, Skull, Compass, Coins, House, Shield, Siren, BookOpen, Scroll, X } from 'lucide-react';
+import pirateBoardCenter from '../assets/images/pirate_board_center_1779246629628.png';
 
 interface GameBoardProps {
   cells: BoardCell[];
@@ -180,7 +181,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           {/* AI Generated Vintage Sea Illustration Backdrop */}
           <div className="absolute inset-0 z-0 pointer-events-none opacity-20 mix-blend-multiply transition-opacity duration-700">
             <img 
-              src="/src/assets/images/pirate_board_center_1779246629628.png" 
+              src={pirateBoardCenter} 
               alt="Pirate Ocean Map Centerpiece" 
               className="w-full h-full object-cover scale-105 filter sepia contrast-125"
               referrerPolicy="no-referrer"
@@ -345,7 +346,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               {/* Background ancient map parchment watermark decoration */}
               <div className="absolute inset-0 opacity-[0.07] pointer-events-none z-0">
                 <img 
-                  src="/src/assets/images/pirate_board_center_1779246629628.png" 
+                  src={pirateBoardCenter} 
                   alt="Ancient Map background inside rules book" 
                   className="w-full h-full object-cover filter contrast-200 brightness-50"
                   referrerPolicy="no-referrer"

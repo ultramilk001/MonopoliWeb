@@ -6,6 +6,7 @@ import {
   Users, Key, Play, Plus, RefreshCw, Radio, Flame
 } from 'lucide-react';
 import { pirateAudio } from '../utils/audio';
+import pirateBoardCenter from '../assets/images/pirate_board_center_1779246629628.png';
 
 export interface PirateTemplate {
   charId: number;
@@ -584,7 +585,7 @@ export const PlayerSetup: React.FC<PlayerSetupProps> = ({ onStartGame }) => {
       {/* Immersive Starry night sea backdrop decoration */}
       <div className="absolute inset-0 pointer-events-none opacity-20 mix-blend-color-burn">
         <img 
-          src="/src/assets/images/pirate_board_center_1779246629628.png" 
+          src={pirateBoardCenter} 
           alt="Ancient Treasure Map Parchment Background decorative mesh" 
           className="w-full h-full object-cover filter sepia brightness-[0.35] contrast-125"
           referrerPolicy="no-referrer"
