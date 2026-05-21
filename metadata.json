@@ -1,0 +1,6 @@
+{
+  "name": "Pirate Monopoly",
+  "description": "Papan permainan monopoli interaktif bertema petualangan bajak laut premium dengan visual peta kuno top-down, animasi dadu, dan kecerdasan buatan kapten kapal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
